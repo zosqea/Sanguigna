@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    public int health;
+    [SerializeField] public int health;
     public int maxHealth;
     public int coefficient;
     void Start()
@@ -13,7 +13,7 @@ public class Health : MonoBehaviour
     }
     private void Update()
     {
-        Debug.Log(health);
+        //Debug.Log(health);
     }
     IEnumerator recoveryHealth()
     {
